@@ -1,6 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 gem 'sinatra', require: 'sinatra/base'
-gem 'faker'
 gem 'shotgun'
 gem 'pry'
+gem 'minitest'
+gem 'capybara'
+gem 'launchy'
+gem 'sqlite3'
+gem 'faker'

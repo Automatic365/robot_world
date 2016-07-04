@@ -1,3 +1,5 @@
+require 'faker'
+
 class Robot
   attr_reader :name,
               :city,
@@ -17,4 +19,10 @@ class Robot
     @date_hired  = data['date_hired']
     @department  = data['department']
   end
+
+  def age
+    now = Time.now.utc.to_date
+    now.year - created.to_i
+  end
+
 end

@@ -1,7 +1,10 @@
+<a class="btn btn-primary" href="/" role="button">Back to Home Page</a>
+<a class="btn btn-primary" href="/robots/new" role="button">Make a New Robot</a>
 <h1>All Robots</h1>
 
+
 <% @robots.each do |robot| %>
-  <img src="http://robohash.org/ <%= robot.name %>" />
+  <img src="http://robohash.org/ <%= robot.name %>" alt= "Robot picture"/>
   <h3>(<%= robot.id %>) <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
   <a href="/robots/<%= robot.id %>/edit">Edit</a>
   <a href="/">Home</a>
